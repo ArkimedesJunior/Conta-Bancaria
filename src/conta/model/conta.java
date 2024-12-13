@@ -1,6 +1,6 @@
 package conta.model;
 
-public class conta {
+public  abstract class conta {
    
 	
 	// Atributo da classe conta / Variaveis
@@ -84,10 +84,8 @@ public class conta {
 	
 	public boolean sacar(float valor) {
 		
-		if(this.getSaldo() < valor ) {
-			System.out.println("\n Saldo Insuficiente!");
-			return false;
-		}
+		
+		
 		
 		this.setSaldo(this.getSaldo() - valor);
 		return true;
